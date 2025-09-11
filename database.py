@@ -4,6 +4,6 @@ import os
 
 load_dotenv()
 
-MONGO_URI = os.getenv("DHRUV0712")
-client = motor.motor_asyncio.AsyncIOMotorClient(DHRUV0712)
+MONGO_URI = os.getenv("MONGO_URI")
+client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_URI)
 db = client.clothingdb
